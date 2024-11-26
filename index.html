@@ -1,0 +1,322 @@
+<html lang="en" id="html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Ultimate Calculator</title>
+  </head>
+  <body>
+    <main id="main">
+      <h1>The Ultimate Calculator</h1>
+      <p>Please a calculator:</p>
+      <select id="selector">
+        <option value="select"></option>
+        <!-- FTC -->
+        <option value="1">Fahrenheit to Celcius Calculator</option>
+        <!-- AOT -->
+        <option value="2">Area of a Trapazoid</option>
+        <!-- Circle -->
+        <option value="3">Area of a Circle</option>
+        <!-- Rectangle -->
+        <option value="4">Area of a Rectangle</option>
+        <!-- triangle -->
+        <option value="5">Area of a Triangle</option>
+        <!-- Sphere -->
+        <option value="6">Volume of a Sphere</option>
+        <!-- Rect prism -->
+        <option value="7">Volume of a Rectangular prism</option>
+        <!-- Tri angular prism -->
+        <option value="8">Volume of a Tri-angular prism</option>
+        <!-- Average -->
+        <option value="9">Average Calculator</option>
+        <!-- Tip -->
+        <option value="10">Tip Calculator</option>
+      </select>
+
+      <hr />
+      <!-- Temp div -->
+      <div id="FTC" class="Calcs">
+        <select id="option">
+          <option value="1">Fahrenheit to Celcius</option>
+          <option value="2">Celcius to Fahrenheit</option>
+        </select>
+        <h1 id="mH">Fahrenheit to Celsius Convertor</h1>
+        <p id="EquationSec">°C = (°F - 32) x 5 / 9</p>
+        <h2>Input</h2>
+        <p>
+          <span id="tempIn">Temperature in Fahrenheit:</span>
+          <input type="number" id="fIn" />
+        </p>
+
+        <button id="converter">Convert</button>
+        <h2>Output</h2>
+        <p>
+          <span id="outM">Temperature in Celsius:</span>
+          <span id="output">----</span>
+        </p>
+      </div>
+      <!-- Trapezoid div -->
+      <div id="AOT" class="Calcs">
+        <h1 id="mH">Area of a trapezoid</h1>
+        <p id="EquationSec">A = ½(<i>b₁ + b₂</i>) * <i>h</i></p>
+        <p>
+          Output in
+          <select id="outMeasureTrap">
+            <option value="mm">Milimetres</option>
+            <option value="cm">Centimetres</option>
+            <option value="m">Metres</option>
+            <option value="Km">Kilometres</option>
+            <option value='"'>Inches</option>
+            <option value="ft">Feet</option>
+            <option value="yd">Yards</option>
+            <option value="mi">Miles</option>
+          </select>
+        </p>
+        <h2>Input</h2>
+        <p>
+          Height:<input type="number" id="TrapHNum" class="avgNum" /> Base 1
+          :<input type="number" id="TrapBOne" class="avgNum" /> Base 2:
+          <input type="number" id="TrapBTwo" class="avgNum" />
+        </p>
+
+        <button id="TRAPCAL">Calculate Area</button>
+        <h2>Output</h2>
+        <p>
+          Area:
+          <span id="TrapOutput">----</span>
+        </p>
+      </div>
+      <!-- Circle div -->
+      <div id="AOC" class="Calcs">
+        <h1 id="mH">Area of a Circle</h1>
+        <p id="EquationSec">A= <i>πr</i>²</p>
+        <p>
+          Output in
+          <select id="outMeasureCirc">
+            <option value="mm">Milimetres</option>
+            <option value="cm">Centimetres</option>
+            <option value="m">Metres</option>
+            <option value="Km">Kilometres</option>
+            <option value='"'>Inches</option>
+            <option value="ft">Feet</option>
+            <option value="yd">Yards</option>
+            <option value="mi">Miles</option>
+          </select>
+        </p>
+        <h2>Input</h2>
+        <p>Radius:<input type="number" id="CR" class="avgNum" /></p>
+
+        <button id="CIRCAL">Calculate Area</button>
+        <h2>Output</h2>
+        <p>
+          Area:
+          <span id="CIROutput">----</span>
+        </p>
+      </div>
+      <!-- Rectangle div -->
+      <div id="AOR" class="Calcs">
+        <h1 id="mH">Area of a Rectangle</h1>
+        <p id="EquationSec">A= <i>b</i> * <i>h</i></p>
+        <p>
+          Output in
+          <select id="outMeasureRect">
+            <option value="mm">Milimetres</option>
+            <option value="cm">Centimetres</option>
+            <option value="m">Metres</option>
+            <option value="Km">Kilometres</option>
+            <option value='"'>Inches</option>
+            <option value="ft">Feet</option>
+            <option value="yd">Yards</option>
+            <option value="mi">Miles</option>
+          </select>
+        </p>
+        <h2>Input</h2>
+        <p>
+          Base:<input type="number" id="RB" class="avgNum" /> Height:<input
+            type="number"
+            id="RH"
+            class="avgNum"
+          />
+        </p>
+
+        <button id="RectCAL">Calculate Area</button>
+        <h2>Output</h2>
+        <p>
+          Area:
+          <span id="RectOutput">----</span>
+        </p>
+      </div>
+      <!-- Triangle div -->
+      <div id="AOTri" class="Calcs">
+        <h1 id="mH">Area of a Triangle</h1>
+        <p id="EquationSec">A= (<i>b</i> * <i>h</i>) / 2</p>
+        <p>
+          Output in
+          <select id="outMeasureTri">
+            <option value="mm">Milimetres</option>
+            <option value="cm">Centimetres</option>
+            <option value="m">Metres</option>
+            <option value="Km">Kilometres</option>
+            <option value='"'>Inches</option>
+            <option value="ft">Feet</option>
+            <option value="yd">Yards</option>
+            <option value="mi">Miles</option>
+          </select>
+        </p>
+        <h2>Input</h2>
+        <p>
+          Base:<input type="number" id="TriB" class="avgNum" /> Height:<input
+            type="number"
+            id="TriH"
+            class="avgNum"
+          />
+        </p>
+
+        <button id="TriCAL">Calculate Area</button>
+        <h2>Output</h2>
+        <p>
+          Area:
+          <span id="TriOutput">----</span>
+        </p>
+      </div>
+      <!-- Sphere div -->
+      <div id="VOS" class="Calcs">
+        <h1 id="mH">Volume of a Sphere</h1>
+        <p id="EquationSec">V= (<i>4/3</i>) * (<i>πr</i>³)</p>
+        <p>
+          Output in
+          <select id="outMeasureSPH">
+            <option value="mm">Milimetres</option>
+            <option value="cm">Centimetres</option>
+            <option value="m">Metres</option>
+            <option value="Km">Kilometres</option>
+            <option value='"'>Inches</option>
+            <option value="ft">Feet</option>
+            <option value="yd">Yards</option>
+            <option value="mi">Miles</option>
+          </select>
+        </p>
+        <h2>Input</h2>
+        <p>Radius:<input type="number" id="SPHR" class="avgNum" /></p>
+
+        <button id="SPHCAL">Calculate Volume</button>
+        <h2>Output</h2>
+        <p>
+          Area:
+          <span id="SPHOutput">----</span>
+        </p>
+      </div>
+      <!-- Rectangular prism -->
+      <div id="VORP" class="Calcs">
+        <h1 id="mH">Volume of a Rectangular Prism</h1>
+        <p id="EquationSec">V= <i>b * w * h</i></p>
+        <p>
+          Output in
+          <select id="outMeasureRECTP">
+            <option value="mm">Milimetres</option>
+            <option value="cm">Centimetres</option>
+            <option value="m">Metres</option>
+            <option value="Km">Kilometres</option>
+            <option value='"'>Inches</option>
+            <option value="ft">Feet</option>
+            <option value="yd">Yards</option>
+            <option value="mi">Miles</option>
+          </select>
+        </p>
+        <h2>Input</h2>
+        <p>
+          Base:<input type="number" id="RECTB" class="avgNum" /> Width:<input
+            type="number"
+            id="RECTW"
+            class="avgNum"
+          />
+          Height:<input type="number" id="RECTH" class="avgNum" />
+        </p>
+
+        <button id="RECTPCAL">Calculate Volume</button>
+        <h2>Output</h2>
+        <p>
+          Area:
+          <span id="RECTPOutput">----</span>
+        </p>
+      </div>
+      <!-- Triangular prism -->
+      <div id="VOTRI" class="Calcs">
+        <h1 id="mH">Volume of a Tri-angular Prism</h1>
+        <p id="EquationSec">
+          V= (<i>1/4</i>) * h *
+          sqrt(<i>﹣b₁⁴+2(b₁b₂)²+2(b₁b₃)²﹣b₂⁴+2(b₂b₃)²﹣b₃⁴</i>)
+        </p>
+        <p>
+          Output in
+          <select id="outMeasureTRIP">
+            <option value="mm">Milimetres</option>
+            <option value="cm">Centimetres</option>
+            <option value="m">Metres</option>
+            <option value="Km">Kilometres</option>
+            <option value='"'>Inches</option>
+            <option value="ft">Feet</option>
+            <option value="yd">Yards</option>
+            <option value="mi">Miles</option>
+          </select>
+        </p>
+        <h2>Input</h2>
+        <p>
+          Base 1:<input type="number" id="TRIB1" class="avgNum" /> Base 2:<input
+            type="number"
+            id="TRIB2"
+            class="avgNum"
+          />
+          Base 3:<input type="number" id="TRIB3" class="avgNum" /> Height:<input
+            type="number"
+            id="TRIH"
+            class="avgNum"
+          />
+        </p>
+
+        <button id="TRIPCAL">Calculate Volume</button>
+        <h2>Output</h2>
+        <p>
+          Area:
+          <span id="TRIPOutput">----</span>
+        </p>
+      </div>
+      <!-- Average Div -->
+      <div id="AVGDIV" class="Calcs">
+        <h1>Average Calculator</h1>
+        <h2>Input</h2>
+        <p>
+          Number One:<input type="number" id="Num1GR" class="avgNum" /> Number
+          Two:<input type="number" id="Num2GR" class="avgNum" /> Number
+          Three:<input type="number" id="Num3GR" class="avgNum" />
+        </p>
+
+        <button id="AVGBTN">Average</button>
+        <h2>Output</h2>
+        <p>
+          Average across numbers:
+          <span id="avgOut">----</span>
+        </p>
+      </div>
+      <!-- Tip calculator -->
+      <div id="TIPDIV" class="Calcs">
+        <h1>Tip Calculator</h1>
+        <h2>Input</h2>
+        <p>
+          Amount of People:<input type="number" id="PANUM" class="avgNum" /> Tip
+          Percentage:<input type="number" id="TPNUM" class="avgNum" /> Meal
+          Cost: $<input type="number" id="MCNUM" class="avgNum" />
+        </p>
+
+        <button id="TIPBTN">Calculate</button>
+        <h2>Output</h2>
+        <p>
+          Tip amount per person:
+          <span id="TIPOUT">----</span>
+        </p>
+      </div>
+      <p>Darkmode: <input type="checkbox" id="dms" /></p>
+    </main>
+  </body>
+</html>

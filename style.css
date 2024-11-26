@@ -1,0 +1,38 @@
+/* Container for most Items */
+main {
+  border: 2px solid black;
+  text-align: center;
+  width: 600px;
+  padding: 50px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+/* Calculator selector */
+#selector {
+  text-align: center;
+}
+
+/* Main Equation */
+#EquationSec {
+  border: 2px solid dimgray;
+  font-size: xx-large;
+  width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Calculator divs */
+.Calcs {
+  display: block;
+  width: 550px;
+  background: white;
+  padding: 10px;
+  border: black solid 3px;
+  margin: auto;
+}
+
+/* Input feilds */
+.avgNum {
+  width: 50px;
+}
